@@ -107,6 +107,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
+    <Content Include="Views\RemoteData\Data.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -140,7 +141,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ActionInvokerController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\FastController.cs" />
+    <Compile Include="Controllers\Home1Controller.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\RemoteDataController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -148,6 +152,7 @@
     <Compile Include="Infrastructure\CustomControllerActivator.cs" />
     <Compile Include="Infrastructure\CustomControllerFactory.cs" />
     <Compile Include="Infrastructure\LocalAttribute.cs" />
+    <Compile Include="Models\RemoteService.cs" />
     <Compile Include="Models\Result.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -155,6 +160,8 @@
     <Folder Include="App_Data\" />
     <Folder Include="Views\ActionInvoker\" />
     <Folder Include="Views\Customer\" />
+    <Folder Include="Views\Fast\" />
+    <Folder Include="Views\Home1\" />
     <Folder Include="Views\Product\" />
   </ItemGroup>
   <PropertyGroup>
